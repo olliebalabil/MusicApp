@@ -3,7 +3,7 @@ import React from "react"
 import Profile from "./Profile"
 import Albums from "./Albums"
 
-export default function Artist() {
+export default function App() {
   return (
     <>
     <jumbotron class="display-4 d-flex justify-content-center py-3">Bjork</jumbotron>
