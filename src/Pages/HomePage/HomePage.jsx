@@ -3,7 +3,7 @@ import "./HomePage.css"
 
 export default function Home() {
   const [image, setImage] = useState("../../assests/bjork.jpeg")
-  const imageSources = ["../../assests/bjork.jpeg", "../../assests/bjork2.jpeg", "../../assests/bjork3.jpeg","../../assests/bjork4.jpeg","../../assests/bjork5.jpeg"]
+  const imageSources = ["../../assests/bjork.jpeg", "../../assests/bjork2.jpeg", "../../assests/bjork3.jpeg","../../assests/bjork5.jpeg"]
 
   let i = 0
 
@@ -11,7 +11,6 @@ export default function Home() {
     const timer = setInterval(() => {
       i++
       i = i % imageSources.length
-      console.log("bjork", i)
       setImage(imageSources[i])
     }, 3000)
     return () => {

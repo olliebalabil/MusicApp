@@ -12,5 +12,5 @@ Website using React. The website contains multiple components (Home, Profile, Al
 ![Screenshot of album page](./assests/Screenshot.png)
 
 ## Bugs
-- For some albums, clicking on the album cover doesn't lead to the correct wikipedia page. This is because wikipedia's URLs aren't uniform.
+- (Fixed by adding a conditional statement in `SingleAlbum.jsx`) For some albums, clicking on the album cover doesn't lead to the correct wikipedia page. This is because wikipedia's URLs aren't uniform.
 

@@ -14,7 +14,17 @@ export default function SingleAlbum(props) {
   }
 
   const openInNewTab = () => {
-    const url = `https://en.wikipedia.org/wiki/${props.name}_(Björk_album)`
+    let url = `https://en.wikipedia.org/wiki/${props.name}_(Björk_album)`
+    if (props.name==="Vulnicura") {
+      url = "https://en.wikipedia.org/wiki/Vulnicura"
+    } else if (props.name === "Homogenic") {
+      url = "https://en.wikipedia.org/wiki/Homogenic"
+    } else if (props.name === "Vespertine") {
+      url = "https://en.wikipedia.org/wiki/Vespertine"
+    } else if (props.name === "Volta") {
+      url = "https://en.wikipedia.org/wiki/Volta_(album)"
+    }
+    
     window.open(url)
   }
 
@@ -22,10 +32,10 @@ export default function SingleAlbum(props) {
   return (
     <>
       <div className="single-album-div">
-        <img class="album-img" src={props.image} alt={props.name} onClick={openInNewTab} />
-        <div class="d-flex justify-content-evenly">
+        <img className="album-img" src={props.image} alt={props.name} onClick={openInNewTab} />
+        <div className="d-flex justify-content-evenly">
           <p>{props.name} - {props.year}</p>
-          <img class="heart-img" src={hearts[liked]} onClick={likeAlbum}></img>
+          <img className="heart-img" src={hearts[liked]} onClick={likeAlbum}></img>
         </div>
 
       </div>
