@@ -5,7 +5,7 @@ import "./Profile.css"
 export default function Profile() {
   return (
     <>
-      <div class="d-flex">
+      <div class="d-flex profile-div">
         <img class="profile-img" src="../assests/bjork.jpeg" alt="bjork" />
         <p class="d-flex align-items-center">
           Björk Guðmundsdóttir (born 21 November 1965) is an Icelandic singer, songwriter, composer, record producer, and actress. Noted for her distinct voice, three-octave vocal range, bold musical choices, and sometimes eccentric public persona, she has developed an eclectic musical style over a career spanning four-decades, drawing on electronic, folk, pop, experimental, trip hop, jazz, industrial, classical, and avant-garde music.
