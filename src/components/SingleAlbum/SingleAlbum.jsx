@@ -1,13 +1,11 @@
 import React, { useState } from "react"
-import "./SingleAlbum.css"
-import { useNavigate } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { bindActionCreators } from "redux"
-import { actionCreators } from "../../action-creators"
 
+import { actionCreators } from "../../action-creators"
+import "./SingleAlbum.css"
 
 export default function SingleAlbum(props) {
-  const navigate = useNavigate()
   const dispatch = useDispatch()
   const [liked, setLiked] = useState(0)
 

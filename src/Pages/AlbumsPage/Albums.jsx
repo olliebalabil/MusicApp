@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import { useSelector, useDispatch } from 'react-redux'
 import { bindActionCreators } from "redux"
+
 import { actionCreators } from "../../action-creators"
-
-
-
 import SingleAlbum from "../../components/SingleAlbum/SingleAlbum"
 import LikeNumber from "../../components/LikeNumber"
 import "./Albums.css"
@@ -15,10 +13,9 @@ export default function Albums() {
   const dispatch = useDispatch()
 
   const likes = useSelector(state => state.value)
-
   const { resetLikes } = bindActionCreators(actionCreators, dispatch)
 
-  useEffect(()=>{
+  useEffect(() => { //resets likes whenever page loads
     resetLikes()
   }, [])
 

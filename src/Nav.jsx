@@ -18,7 +18,7 @@ export default function Nav() {
           <NavLink to='/albums' style={({ isActive }) => (isActive ? activeStyle : undefined)}>Albums</NavLink>
         </ul>
       </nav>
-      <Outlet/>
+      <Outlet />
     </>
   )
 }
