@@ -4,7 +4,10 @@ import { Profile, Albums, Home } from "./components"
 import Nav from "./Nav"
 
 
+
 export default function App() {
+  
+
   return (
     <>
       <Routes>
