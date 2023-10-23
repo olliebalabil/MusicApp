@@ -11,7 +11,7 @@ export default function SingleAlbum(props) {
 
   const { addLike, minusLike } = bindActionCreators(actionCreators, dispatch)
 
-  const hearts = ["./assests/blackheart.png", "./assests/heart.png"]
+  const hearts = ["./assets/blackheart.png", "./assets/heart.png"]
 
   const likeAlbum = () => {
     setLiked(prevState => (prevState + 1) % 2)

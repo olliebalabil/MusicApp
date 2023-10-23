@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react"
 import "./HomePage.css"
 
 export default function Home() {
-  const [image, setImage] = useState("../../assests/bjork.jpeg")
-  const imageSources = ["../../assests/bjork.jpeg", "../../assests/bjork2.jpeg", "../../assests/bjork3.jpeg","../../assests/bjork5.jpeg"]
+  const [image, setImage] = useState("../../assets/bjork.jpeg")
+  const imageSources = ["../../assets/bjork.jpeg", "../../assets/bjork2.jpeg", "../../assets/bjork3.jpeg","../../assets/bjork5.jpeg"]
 
   let i = 0
 

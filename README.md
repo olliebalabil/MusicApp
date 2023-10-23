@@ -8,8 +8,8 @@ Website using React. The website contains multiple components (`Home`, `Profile`
 - Call `npm run dev` in the terminal. A URL should be displayed in the terminal (i.e. `http://localhost:5173`).
 - Go to that URL in the browser.
 
-![Screenshot of home page](./assests/Screenshot2.png)
-![Screenshot of album page](./assests/Screenshot.png)
+![Screenshot of home page](./assets/Screenshot2.png)
+![Screenshot of album page](./assets/Screenshot.png)
 
 ## Bugs
 - (Fixed by adding a conditional statement in `SingleAlbum.jsx`) For some albums, clicking on the album cover doesn't lead to the correct wikipedia page. This is because wikipedia's URLs aren't uniform.
