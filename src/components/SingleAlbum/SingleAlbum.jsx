@@ -4,6 +4,8 @@ import { bindActionCreators } from "redux"
 
 import { actionCreators } from "../../action-creators"
 import "./SingleAlbum.css"
+import heart from "../../../assets/heart.png"
+import blackheart from "../../../assets/blackheart.png"
 
 export default function SingleAlbum(props) {
   const dispatch = useDispatch()
@@ -11,7 +13,7 @@ export default function SingleAlbum(props) {
 
   const { addLike, minusLike } = bindActionCreators(actionCreators, dispatch)
 
-  const hearts = ["./assets/blackheart.png", "./assets/heart.png"]
+  const hearts = [blackheart, heart]
 
   const likeAlbum = () => {
     setLiked(prevState => (prevState + 1) % 2)
